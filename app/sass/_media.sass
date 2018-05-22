@@ -1,0 +1,131 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+	body
+		font-size: 16px
+	h1
+		margin: 0
+	.social
+		position: static
+		flex-direction: row
+		li 
+			margin: 30px 10px 0
+	#treason		
+		.parting
+			.left
+				position: absolute
+				z-index: 0
+		.parting, .couses
+			top: 0
+	#about_massage
+		background-image: none
+		padding: 55px 0
+		h2
+			margin-bottom: 25px
+		p
+			margin-bottom: 20px
+			font-size: 16px
+	.mfp-content
+		#popup_form
+			margin: 0 10%
+//Small: ≥576px
++media-breakpoint-down(sm)
+	h1
+		font-size: 21px
+		padding: 15px
+		i 
+			margin: 15px 0
+	#header
+		.content_wrap
+			.content
+				.advantages
+					ul
+						width: 100%
+						font-size: 12px
+	.logo, .call
+		float: none
+	.logo
+		margin: 0 auto
+	#targets, #about_me, #faq
+		padding: 35px 0	
+	#treason
+		padding-bottom: 35px
+	.overlay
+		.inner
+			padding: 25px 15px
+	#programms
+		.why
+			.left
+				h2
+					top: 30px
+			.right
+				ul
+					padding: 25px 15px
+					li 
+						font-size: 16px
+						padding: 10px 0
+	footer
+		.left, .right
+			p
+				text-align: center
+		.copy
+			text-align: center
+			img
+				display: block
+				margin: 5px auto 10px
+//Extra small: >0
++media-breakpoint-down(xs)
+	.mfp-content
+		#popup_form
+			margin: 0
+	h2
+		font-size: 24px
+	#header
+		padding: 15px 0
+		.content_wrap
+			.content
+				.advantages
+					ul
+						font-size: 10px
+						li
+							padding: 36.5px 0
+	#treason		
+		.parting
+			.left
+				display: none
+			.text
+				min-height: auto
+				padding-top: 35px
+				padding-bottom: 35px
+	form
+		.inputs_wrap
+			margin-bottom: 35px
+	.overlay .inner
+		padding: 25px 6px
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
